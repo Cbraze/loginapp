@@ -1,8 +1,10 @@
 package com.example.myapplication
 
 class LoginVerification {
-    fun verifyEmailAndPAssword(email: String, password: String): Boolean {
-        return email == "test@craig.com" &&
-                password == "testing"
+    fun verifyCredentials(email: String, password: String): Boolean {
+        return (email == "test@craig.com" &&
+                password == "testing") ||
+                (email == "admin@craig.com" &&
+                        password == "testing")
     }
 }
